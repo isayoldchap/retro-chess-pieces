@@ -120,7 +120,7 @@ def king():
         ("body", ell(50, 37, 9, 9.5)),                                                  # dome
         ("body", squeeze_x(body, K)),
         ("line", squeeze_x("M17,70 Q50,63 83,70", K)),                                # top of the band
-        ("slot", squeeze_x("M29,76 Q50,79.5 71,76 Q71,80.5 50,81.5 Q29,80.5 29,76 Z", K)),  # dark slot
+        ("slot", ell(50, 77.5, 21 * K, 2.8)),                                          # dark elliptical slot
     ]
 
 def queen():
