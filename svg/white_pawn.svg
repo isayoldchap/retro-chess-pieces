@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <defs>
+    <radialGradient id="f" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.5" stop-color="#fdebd4"/>
+      <stop offset="1" stop-color="#f0b493"/>
+    </radialGradient>
+  </defs><g transform="translate(50,94.5) scale(1.0000) translate(-50.00,-90.62) translate(0,3)"><path d="M22,86 L22,80 Q22,74 30,73 L70,73 Q78,74 78,80 L78,86 Z" fill="url(#f)" stroke="#eab79c" stroke-width="2.0" stroke-linejoin="round"/><path d="M38,73 C40,62 43,52 44,44 L56,44 C57,52 60,62 62,73 Z" fill="url(#f)" stroke="#eab79c" stroke-width="2.0" stroke-linejoin="round"/><path d="M34,42 Q34,37 40,37 L60,37 Q66,37 66,42 Q66,46 60,46 L40,46 Q34,46 34,42 Z" fill="url(#f)" stroke="#eab79c" stroke-width="2.0" stroke-linejoin="round"/><path d="M50,13 A11,11 0 1 1 49.99,13 Z" fill="url(#f)" stroke="#eab79c" stroke-width="2.0" stroke-linejoin="round"/><path d="M22,86 L22,80 Q22,74 30,73 L70,73 Q78,74 78,80 L78,86 Z" fill="url(#f)"/><path d="M38,73 C40,62 43,52 44,44 L56,44 C57,52 60,62 62,73 Z" fill="url(#f)"/><path d="M34,42 Q34,37 40,37 L60,37 Q66,37 66,42 Q66,46 60,46 L40,46 Q34,46 34,42 Z" fill="url(#f)"/><path d="M50,13 A11,11 0 1 1 49.99,13 Z" fill="url(#f)"/><path d="M24,80.5 L76,80.5" fill="none" stroke="#cf8d70" stroke-width="1.8" stroke-linecap="round"/><path d="M41,64 L59,64" fill="none" stroke="#cf8d70" stroke-width="1.8" stroke-linecap="round"/><path d="M24,85 L76,85" fill="none" stroke="#fff6ea" stroke-width="2.4" stroke-linecap="round"/></g></svg>

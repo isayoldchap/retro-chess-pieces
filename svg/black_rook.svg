@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <defs>
+    <radialGradient id="f" cx="0.38" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#4a4a50"/>
+      <stop offset="0.5" stop-color="#1e1e22"/>
+      <stop offset="1" stop-color="#050507"/>
+    </radialGradient>
+  </defs><g transform="translate(50,94.5) scale(1.0102) translate(-50.00,-93.55) translate(0,0)"><path d="M18.5,86 L81.5,86 Q84,86 84,88.5 L84,89.5 Q84,92 81.5,92 L18.5,92 Q16,92 16,89.5 L16,88.5 Q16,86 18.5,86 Z" fill="url(#f)" stroke="#efe3cf" stroke-width="3.0" stroke-linejoin="round"/><path d="M18,8 L35,8 L35,11 L44,11 L44,8 L56,8 L56,11 L65,11 L65,8 L82,8 L82,29 L72,35 L72,63 L82,69 L82,86 L18,86 L18,69 L28,63 L28,35 L18,29 Z" fill="url(#f)" stroke="#efe3cf" stroke-width="3.0" stroke-linejoin="round"/></g></svg>
