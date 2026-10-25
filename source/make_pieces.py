@@ -101,17 +101,26 @@ def knight():
         ("slot", circ(nx, ny, 1.6)),                                          # nostril
     ]
 
+def squeeze_x(path, k, cx=50):
+    """Scale a path's x coordinates about cx (paths here use absolute M/L/C/Q commands only)."""
+    import re
+    def f(m):
+        x, y = float(m.group(1)), m.group(2)
+        return f"{cx + (x - cx) * k:.2f},{y}"
+    return re.sub(r"(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)", f, path)
+
 def king():
-    crown = ("M50,42 C48,28 35,20 24,24 C11,29 9,47 19,57 L25,66 L75,66 L81,57 "
-             "C91,47 89,29 76,24 C65,20 52,28 50,42 Z")              # two convex lobes
+    # classic king: cross, dome peeking between two broad lobes, short solid band underneath
+    K = 0.86
+    body = ("M50,46 C46,36 34,31 22,33 C9,36 4,49 10,59 C13,64 16,67 17,71 L17,79 "
+            "Q17,84 22,84 L78,84 Q83,84 83,79 L83,71 C84,67 87,64 90,59 "
+            "C96,49 91,36 78,33 C66,31 54,36 50,46 Z")
     return [
-        ("slot", "M30,70 L70,70 L68,84 L32,84 Z"),
-        ("body", ell(50, 86, 30, 7)),
-        ("body", crown),
-        ("line", "M50,44 C48.5,50 48.5,57 50,62"),                       # seam between the lobes
-        ("body", rr(21, 61, 79, 71, 4)),                              # crown band
-        ("body", circ(50, 37, 5.5)),                                  # centre knob
-        ("body", "M47,10 L53,10 L53,16 L59,16 L59,22 L53,22 L53,32 L47,32 L47,22 L41,22 L41,16 L47,16 Z"),  # cross
+        ("body", "M47,6 L53,6 L53,12 L59,12 L59,18 L53,18 L53,28 L47,28 L47,18 L41,18 L41,12 L47,12 Z"),  # cross
+        ("body", ell(50, 37, 9, 9.5)),                                                  # dome
+        ("body", squeeze_x(body, K)),
+        ("line", squeeze_x("M17,70 Q50,63 83,70", K)),                                # top of the band
+        ("slot", squeeze_x("M29,76 Q50,79.5 71,76 Q71,80.5 50,81.5 Q29,80.5 29,76 Z", K)),  # dark slot
     ]
 
 def queen():
